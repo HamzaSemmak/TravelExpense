@@ -1,0 +1,25 @@
+/* _content/travelExpense/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+/* Ensuring full height for sidebar */
+.h-100[b-44225np44b] {
+    height: 100vh !important;
+}
+
+.sidebar[b-44225np44b] {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+}
+
+/* Adding some styling for the sidebar background */
+.bg-body-tertiary[b-44225np44b] {
+    background-color: #f8f9fa !important;
+}
+
+/* Ensuring the main content area pushes right of the sidebar */
+main[b-44225np44b] {
+    margin-left: 250px;
+}

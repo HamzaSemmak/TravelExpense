@@ -1,0 +1,51 @@
+AdminDashboard
+│── Controllers                           # Contrôleurs qui gèrent les requêtes HTTP
+│   ├── DashboardController.cs            # Contrôleur principal pour afficher le tableau de bord
+│   ├── UserController.cs                # Contrôleur pour gérer les utilisateurs (CRUD, etc.)
+│   └── AuthController.cs                # Contrôleur pour la gestion de l'authentification et des sessions
+│
+│── Models                                # Entités représentant les données
+│   ├── User.cs                          # Modèle pour l'utilisateur (id, nom, email, rôle, etc.)
+│   ├── Role.cs                          # Modèle pour les rôles utilisateurs
+│   └── Settings.cs                      # Modèle pour les paramètres généraux du dashboard
+│
+│── Views                                 # Vues pour afficher l'interface utilisateur
+│   ├── Dashboard                        # Vues liées au tableau de bord
+│   │   ├── Index.cshtml                 # Page d'accueil du tableau de bord
+│   │   └── Stats.cshtml                 # Statistiques du tableau de bord
+│   ├── User                             # Vues liées aux utilisateurs
+│   │   ├── Index.cshtml                 # Liste des utilisateurs
+│   │   ├── Create.cshtml                # Formulaire de création d'un utilisateur
+│   │   └── Edit.cshtml                  # Formulaire d'édition d'un utilisateur
+│   └── Layouts                          # Vues de mise en page pour l'interface utilisateur
+│       └── _Layout.cshtml               # Layout principal avec navigation et structure
+│
+│── Services                              # Logique métier, services pour interagir avec les données
+│   ├── UserService.cs                   # Service pour gérer la logique liée aux utilisateurs
+│   ├── AuthService.cs                   # Service pour gérer l'authentification et l'autorisation
+│   └── DashboardService.cs              # Service pour la logique du tableau de bord (statistiques, etc.)
+│
+│── Repository                            # Accès aux données et abstraction de la base de données
+│   ├── Data                             # Gestion de la base de données
+│   │   └── AppDbContext.cs             # Configuration du DbContext pour Entity Framework
+│   ├── IUserRepository.cs               # Interface pour les opérations liées aux utilisateurs
+│   ├── UserRepository.cs                # Implémentation de IUserRepository pour gérer les utilisateurs
+│   └── ISettingsRepository.cs           # Interface pour gérer les paramètres généraux
+│
+│── Utils                                 # Fonctions utilitaires et classes helpers
+│   ├── EmailHelper.cs                   # Classe pour envoyer des emails via SMTP ou autres
+│   ├── ValidationHelper.cs              # Classe pour valider des données comme les emails, numéros, etc.
+│   └── LoggerHelper.cs                  # Classe pour gérer les logs (erreurs, informations)
+│
+│── wwwroot                               # Dossier pour les fichiers statiques (CSS, JS, images)
+│   ├── css                              # Fichiers CSS et SCSS
+│   │   ├── site.css                     # Style principal de l'interface
+│   │   └── dashboard.css                # Styles spécifiques au tableau de bord
+│   ├── js                               # Scripts JavaScript et jQuery
+│   │   ├── app.js                       # Script principal
+│   │   └── dashboard.js                 # Script spécifique au tableau de bord
+│   └── images                           # Images utilisées dans le dashboard
+│
+│── appsettings.json                     # Fichier de configuration pour les paramètres généraux (API keys, connexion DB, etc.)
+│── Program.cs                           # Point d'entrée de l'application, configuration des services, middleware, etc.
+└── AdminDashboard.sln                   # Solution file pour l'organisation du projet
