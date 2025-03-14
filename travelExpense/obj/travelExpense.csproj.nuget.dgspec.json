@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\Travel Expense\\travelExpense\\travelExpense.csproj": {}
+    "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\travelExpense.csproj": {}
   },
   "projects": {
-    "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\Travel Expense\\travelExpense\\travelExpense.csproj": {
+    "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\travelExpense.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\Travel Expense\\travelExpense\\travelExpense.csproj",
+        "projectUniqueName": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\travelExpense.csproj",
         "projectName": "travelExpense",
-        "projectPath": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\Travel Expense\\travelExpense\\travelExpense.csproj",
+        "projectPath": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\travelExpense.csproj",
         "packagesPath": "C:\\Users\\hsemmak\\.nuget\\packages\\",
-        "outputPath": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\Travel Expense\\travelExpense\\obj\\",
+        "outputPath": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,6 +51,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.11, )"
@@ -64,6 +68,10 @@
             "MySql.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

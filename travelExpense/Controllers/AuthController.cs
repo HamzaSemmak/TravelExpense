@@ -1,22 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using travelExpense.Services;
+using travelExpense.Data;
+using travelExpense.Utils;
 
 namespace travelExpense.Controllers
 {
     public class AuthController : Controller
     {
-
-        private readonly AuthService _authService;
-
-        public AuthController(AuthService authService)
+        private readonly ApplicationDbContext _context;
+        public AuthController(ApplicationDbContext context)
         {
-            _authService = authService;
+            this._context = context;
         }
 
         public IActionResult Login()
         {
-            if (HttpContext.Session.GetString("UserEmail") != null)
-                return RedirectToAction("Index", "Travel");
+            if (HttpContext.Session.GetString("User") != null)
+                return Redirect("/");
 
             return View();
         }
@@ -24,15 +23,28 @@ namespace travelExpense.Controllers
         [HttpPost]
         public IActionResult Login(string email, string password)
         {
-            if (_authService.ValidateUser(email, password))
+            var user = _context.Users.FirstOrDefault(u => u.Email == email);
+
+            if (user == null)
             {
-                HttpContext.Session.SetString("UserEmail", email);
-                return RedirectToAction("Index", "Travel");
+                ViewBag.ErrorMessage = "Email not found.";
+                return View();
             }
 
-            ViewBag.ErrorMessage = "Invalid email or password.";
-            return View();
+            if (!UserUtils.VerifyPassword(password, user.Password))
+            {
+                ViewBag.ErrorMessage = "Incorrect password.";
+                return View();
+            }
+
+            var userJson = UserUtils.UserToJson(user);
+            HttpContext.Session.SetString("User", userJson);
+
+            Console.WriteLine($"User logged in: {user}");
+            return Redirect("/");
         }
+
+
 
         public IActionResult Logout()
         {

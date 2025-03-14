@@ -47,7 +47,11 @@ namespace travelExpense.Models
 
         public override string ToString()
         {
-            return base.ToString();
+            return $"Travel: Id={Id}, Name={TravelName}, CategoryId={CategoryId}, Budget={Budget:C}, " +
+                   $"StartDate={(StartDate.HasValue ? StartDate.Value.ToString("yyyy-MM-dd") : "N/A")}, " +
+                   $"EndDate={(EndDate.HasValue ? EndDate.Value.ToString("yyyy-MM-dd") : "N/A")}, " +
+                   $"Clients={Clients?.Count ?? 0}, Expenses={Expenses?.Count ?? 0}, CreatedAt={CreatedAt:yyyy-MM-dd HH:mm:ss}";
         }
+
     }
 }

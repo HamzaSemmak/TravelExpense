@@ -19,7 +19,7 @@ namespace travelExpense.Models
 
         public override string ToString()
         {
-            return base.ToString();
+            return $"Category: Id={Id}, Name={Name}, Description={Description}, CreatedAt={CreatedAt:yyyy-MM-dd HH:mm:ss}";
         }
     }
 }

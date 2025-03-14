@@ -41,7 +41,7 @@ namespace travelExpense.Models
 
         public override string ToString()
         {
-            return base.ToString();
+            return $"Client: Id={Id}, Name={Name}, Email={Email}, Phone={Phone}, Address={Address}, CreatedAt={CreatedAt:yyyy-MM-dd HH:mm:ss}";
         }
     }
 }

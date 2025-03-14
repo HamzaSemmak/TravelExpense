@@ -19,7 +19,7 @@
                 return;
             }
 
-            if (context.Session.GetString("UserEmail") == null)
+            if (context.Session.GetString("User") == null)
             {
                 context.Response.Redirect("/auth/login");
                 return;

@@ -23,7 +23,8 @@ namespace travelExpense.Models
 
         public override string ToString()
         {
-            return RoleName ?? base.ToString();
+            return $"Role: Id={Id}, Name={RoleName ?? "N/A"}";
         }
+
     }
 }

@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using travelExpense.Data;
 using travelExpense.Middleware;
-using travelExpense.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,8 +10,6 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseMySQL(builder.Configuration.GetConnectionString("DefaultConnection") ?? "");
 });
-
-builder.Services.AddSingleton<AuthService>();
 
 // Register the middleware for session
 builder.Services.AddSession(options =>
