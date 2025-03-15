@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{297BA64E-ADA7-4381-B0C9-26FBD61CA937}|travelExpense.csproj|c:\\workspace\\supmti\\2 gi\\.net avance\\travelexpense\\travelexpense\\middleware\\authmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297BA64E-ADA7-4381-B0C9-26FBD61CA937}|travelExpense.csproj|solutionrelative:middleware\\authmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{297BA64E-ADA7-4381-B0C9-26FBD61CA937}|travelExpense.csproj|c:\\workspace\\supmti\\2 gi\\.net avance\\travelexpense\\travelexpense\\views\\travel\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{297BA64E-ADA7-4381-B0C9-26FBD61CA937}|travelExpense.csproj|solutionrelative:views\\travel\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{297BA64E-ADA7-4381-B0C9-26FBD61CA937}|travelExpense.csproj|c:\\workspace\\supmti\\2 gi\\.net avance\\travelexpense\\travelexpense\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297BA64E-ADA7-4381-B0C9-26FBD61CA937}|travelExpense.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{297BA64E-ADA7-4381-B0C9-26FBD61CA937}|travelExpense.csproj|c:\\workspace\\supmti\\2 gi\\.net avance\\travelexpense\\travelexpense\\models\\travel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297BA64E-ADA7-4381-B0C9-26FBD61CA937}|travelExpense.csproj|solutionrelative:models\\travel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{297BA64E-ADA7-4381-B0C9-26FBD61CA937}|travelExpense.csproj|c:\\workspace\\supmti\\2 gi\\.net avance\\travelexpense\\travelexpense\\utils\\userutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297BA64E-ADA7-4381-B0C9-26FBD61CA937}|travelExpense.csproj|solutionrelative:utils\\userutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{297BA64E-ADA7-4381-B0C9-26FBD61CA937}|travelExpense.csproj|c:\\workspace\\supmti\\2 gi\\.net avance\\travelexpense\\travelexpense\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297BA64E-ADA7-4381-B0C9-26FBD61CA937}|travelExpense.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{297BA64E-ADA7-4381-B0C9-26FBD61CA937}|travelExpense.csproj|c:\\workspace\\supmti\\2 gi\\.net avance\\travelexpense\\travelexpense\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297BA64E-ADA7-4381-B0C9-26FBD61CA937}|travelExpense.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{297BA64E-ADA7-4381-B0C9-26FBD61CA937}|travelExpense.csproj|c:\\workspace\\supmti\\2 gi\\.net avance\\travelexpense\\travelexpense\\controllers\\travelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297BA64E-ADA7-4381-B0C9-26FBD61CA937}|travelExpense.csproj|solutionrelative:controllers\\travelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +26,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 167,
-          "SelectedChildIndex": 21,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\Views\\Travel\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Travel\\Create.cshtml",
+              "ToolTip": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\Views\\Travel\\Create.cshtml",
+              "RelativeToolTip": "Views\\Travel\\Create.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAAAiwD8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T00:32:31.194Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Travel.cs",
+              "DocumentMoniker": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\Models\\Travel.cs",
+              "RelativeDocumentMoniker": "Models\\Travel.cs",
+              "ToolTip": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\Models\\Travel.cs",
+              "RelativeToolTip": "Models\\Travel.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAUwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T00:39:46.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T00:05:19.248Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -103,53 +143,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA6AAAAAAAAAA==",
+              "Title": "TravelController.cs",
+              "DocumentMoniker": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\Controllers\\TravelController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TravelController.cs",
+              "ToolTip": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\Controllers\\TravelController.cs",
+              "RelativeToolTip": "Controllers\\TravelController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAUwBoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T00:01:17.968Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserUtils.cs",
-              "DocumentMoniker": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\Utils\\UserUtils.cs",
-              "RelativeDocumentMoniker": "Utils\\UserUtils.cs",
-              "ToolTip": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\Utils\\UserUtils.cs",
-              "RelativeToolTip": "Utils\\UserUtils.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T23:45:07.96Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCgAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T22:06:13.279Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthMiddleware.cs",
-              "DocumentMoniker": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\Middleware\\AuthMiddleware.cs",
-              "RelativeDocumentMoniker": "Middleware\\AuthMiddleware.cs",
-              "ToolTip": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\Middleware\\AuthMiddleware.cs",
-              "RelativeToolTip": "Middleware\\AuthMiddleware.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T22:04:44.919Z",
+              "WhenOpened": "2025-03-14T22:12:34.356Z",
               "EditorCaption": ""
             }
           ]

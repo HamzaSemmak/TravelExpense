@@ -11,7 +11,6 @@
 <body>
     <div class="container-fluid vh-100">
         <div class="row h-100">
-            <!-- Sidebar -->
             <div class="sidebar border-right col-md-3 col-lg-2 p-0 bg-body-tertiary h-100">
                 <div class="offcanvas-md offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
                     <div class="offcanvas-header">
@@ -19,15 +18,19 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto h-100">
-                        <a href="#" class="d-flex align-items-center text-decoration-none">
-                            <span class="ms-2 fw-bold text-dark">Company Name</span>
+                        <a  ="/" class="d-flex align-items-center text-decoration-none" style="margin-left: 15px; margin-bottom: 12px;">
+                            <span class="h5 fw-bold text-dark">Travel Expense</span>
                         </a>
-                        <br />
                         <div class="sidebar-content">
                             <ul class="nav flex-column">
                                 <li class="nav-item">
                                     <a class="nav-link d-flex align-items-center active" aria-current="page" href="/">
-                                        Dashboard
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex align-items-center active" aria-current="page" href="/Travel/Index">
+                                        Travel
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -40,10 +43,10 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Main Content -->
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                @RenderBody()
+            <main class="col-md-9 col-lg-10">
+                <div class="p-2">
+                    @RenderBody()
+                </div>
             </main>
         </div>
     </div>

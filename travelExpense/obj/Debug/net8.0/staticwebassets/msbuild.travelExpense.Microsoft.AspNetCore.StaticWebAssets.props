@@ -1080,23 +1080,23 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\travelExpense.i9csxpsugh.bundle.scp.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\travelExpense.vonqaeibbp.bundle.scp.css'))">
       <SourceType>Package</SourceType>
       <SourceId>travelExpense</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/travelExpense</BasePath>
-      <RelativePath>travelExpense.i9csxpsugh.bundle.scp.css</RelativePath>
+      <RelativePath>travelExpense.vonqaeibbp.bundle.scp.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>Reference</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>i9csxpsugh</Fingerprint>
-      <Integrity>FjLxmRKInG9PwM/uk0IFY8lb6S+uFVrUmQ5sm+VxAtU=</Integrity>
+      <Fingerprint>vonqaeibbp</Fingerprint>
+      <Integrity>kePMh19cQML4fuyrrHe9qIjlKUyF/32CP3R3nIzUtcA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\travelExpense.i9csxpsugh.bundle.scp.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\travelExpense.vonqaeibbp.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

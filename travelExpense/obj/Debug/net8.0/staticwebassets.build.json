@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZYsN2nAXAKFlcNqhqohZK/4SKlA5l+NYIDrq5+yO0KA=",
+  "Hash": "+ZU6mRViXlHyGU2Mou/QskAbZgbIL7oWxSkyCrp0Xnk=",
   "Source": "travelExpense",
   "BasePath": "_content/travelExpense",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "i9csxpsugh",
-      "Integrity": "FjLxmRKInG9PwM/uk0IFY8lb6S+uFVrUmQ5sm+VxAtU=",
+      "Fingerprint": "vonqaeibbp",
+      "Integrity": "kePMh19cQML4fuyrrHe9qIjlKUyF/32CP3R3nIzUtcA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\obj\\Debug\\net8.0\\scopedcss\\bundle\\travelExpense.styles.css"
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "i9csxpsugh",
-      "Integrity": "FjLxmRKInG9PwM/uk0IFY8lb6S+uFVrUmQ5sm+VxAtU=",
+      "Fingerprint": "vonqaeibbp",
+      "Integrity": "kePMh19cQML4fuyrrHe9qIjlKUyF/32CP3R3nIzUtcA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\travelExpense.bundle.scp.css"
@@ -6251,7 +6251,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "731"
+          "Value": "733"
         },
         {
           "Name": "Content-Type",
@@ -6259,11 +6259,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FjLxmRKInG9PwM/uk0IFY8lb6S+uFVrUmQ5sm+VxAtU=\""
+          "Value": "\"kePMh19cQML4fuyrrHe9qIjlKUyF/32CP3R3nIzUtcA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 00:17:59 GMT"
+          "Value": "Fri, 14 Mar 2025 23:35:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6273,97 +6273,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-FjLxmRKInG9PwM/uk0IFY8lb6S+uFVrUmQ5sm+VxAtU="
-        }
-      ]
-    },
-    {
-      "Route": "travelExpense.i9csxpsugh.bundle.scp.css",
-      "AssetFile": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\travelExpense.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "731"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"FjLxmRKInG9PwM/uk0IFY8lb6S+uFVrUmQ5sm+VxAtU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 00:17:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "i9csxpsugh"
-        },
-        {
-          "Name": "label",
-          "Value": "travelExpense.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-FjLxmRKInG9PwM/uk0IFY8lb6S+uFVrUmQ5sm+VxAtU="
-        }
-      ]
-    },
-    {
-      "Route": "travelExpense.i9csxpsugh.styles.css",
-      "AssetFile": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\obj\\Debug\\net8.0\\scopedcss\\bundle\\travelExpense.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "731"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"FjLxmRKInG9PwM/uk0IFY8lb6S+uFVrUmQ5sm+VxAtU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 00:17:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "i9csxpsugh"
-        },
-        {
-          "Name": "label",
-          "Value": "travelExpense.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-FjLxmRKInG9PwM/uk0IFY8lb6S+uFVrUmQ5sm+VxAtU="
+          "Value": "sha256-kePMh19cQML4fuyrrHe9qIjlKUyF/32CP3R3nIzUtcA="
         }
       ]
     },
@@ -6378,7 +6288,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "731"
+          "Value": "733"
         },
         {
           "Name": "Content-Type",
@@ -6386,11 +6296,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FjLxmRKInG9PwM/uk0IFY8lb6S+uFVrUmQ5sm+VxAtU=\""
+          "Value": "\"kePMh19cQML4fuyrrHe9qIjlKUyF/32CP3R3nIzUtcA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 00:17:59 GMT"
+          "Value": "Fri, 14 Mar 2025 23:35:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6400,7 +6310,97 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-FjLxmRKInG9PwM/uk0IFY8lb6S+uFVrUmQ5sm+VxAtU="
+          "Value": "sha256-kePMh19cQML4fuyrrHe9qIjlKUyF/32CP3R3nIzUtcA="
+        }
+      ]
+    },
+    {
+      "Route": "travelExpense.vonqaeibbp.bundle.scp.css",
+      "AssetFile": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\travelExpense.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "733"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kePMh19cQML4fuyrrHe9qIjlKUyF/32CP3R3nIzUtcA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 23:35:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vonqaeibbp"
+        },
+        {
+          "Name": "label",
+          "Value": "travelExpense.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kePMh19cQML4fuyrrHe9qIjlKUyF/32CP3R3nIzUtcA="
+        }
+      ]
+    },
+    {
+      "Route": "travelExpense.vonqaeibbp.styles.css",
+      "AssetFile": "C:\\Workspace\\Supmti\\2 GI\\.Net Avance\\TravelExpense\\travelExpense\\obj\\Debug\\net8.0\\scopedcss\\bundle\\travelExpense.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "733"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kePMh19cQML4fuyrrHe9qIjlKUyF/32CP3R3nIzUtcA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 23:35:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vonqaeibbp"
+        },
+        {
+          "Name": "label",
+          "Value": "travelExpense.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kePMh19cQML4fuyrrHe9qIjlKUyF/32CP3R3nIzUtcA="
         }
       ]
     }
