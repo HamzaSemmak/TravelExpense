@@ -1,64 +1,80 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model travelExpense.Models.ViewModel.TravelViewModel
+
 @{
     ViewData["Title"] = "Create New Travel";
 }
 
-@model List<travelExpense.Models.Category>
-
 <div class="d-flex align-items-center justify-content-between">
     <div>
-        <h3 class="mt-4">Create New Travel</h3>
+        <h3 class="mt-4"> Create New Travel</h3>
         <p class="text-muted">Fill out the form below to add a new travel record, including the destination, dates, budget, and category.</p>
     </div>
     <a href="/Travel/Index" class="btn btn-primary"> Back </a>
 </div>
 
-<form id="createTravelForm" class="row" method="post" action="/Travel/Create">
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}
+
+<form id="createTravelForm" class="row" method="post">
     <div class="col-4">
         <label for="TravelName" class="form-label">Travel Name</label>
-        <input type="text" id="TravelName" name="TravelName" class="form-control" required maxlength="200" />
-        <div class="invalid-feedback">Travel Name is required and can't be longer than 200 characters.</div>
+        <input type="text" id="TravelName" name="TravelName" class="form-control" required maxlength="200" value="@Model?.TravelName" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.TravelName)</span>
     </div>
 
     <div class="col-4">
         <label for="CategoryId" class="form-label">Category</label>
         <select id="CategoryId" name="CategoryId" class="form-control" required>
             <option value="">Select Category</option>
-            @foreach (var category in Model)
+            @foreach (var category in ViewBag.Categories as List<travelExpense.Models.Category>)
             {
-                <option value="@category.Id">@category.Name</option>
+                <option value="@category.Id" selected="@(Model?.CategoryId == category.Id ? "selected" : null)">
+                    @category.Name
+                </option>
             }
         </select>
-        <div class="invalid-feedback">Category is required.</div>
     </div>
 
     <div class="col-4">
         <label for="Budget" class="form-label">Budget</label>
-        <input type="number" id="Budget" name="Budget" class="form-control" required min="0.01" step="0.01" />
-        <div class="invalid-feedback">Budget must be greater than 0.</div>
+        <input type="number" id="Budget" name="Budget" class="form-control" required min="0.01" step="0.01" value="@Model?.Budget" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.Budget)</span>
     </div>
 
     <div class="col-4">
         <label for="StartDate" class="form-label">Start Date</label>
-        <input type="date" id="StartDate" name="StartDate" class="form-control" required />
-        <div class="invalid-feedback">Start Date is required.</div>
+        <input type="date" id="StartDate" name="StartDate" class="form-control" required value="@Model?.StartDate?.ToString("yyyy-MM-dd")" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.StartDate)</span>
     </div>
 
     <div class="col-4">
         <label for="EndDate" class="form-label">End Date</label>
-        <input type="date" id="EndDate" name="EndDate" class="form-control" required />
-        <div class="invalid-feedback">End Date is required.</div>
+        <input type="date" id="EndDate" name="EndDate" class="form-control" required value="@Model?.EndDate?.ToString("yyyy-MM-dd")" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.EndDate)</span>
     </div>
 
     <div class="col-6">
         <label for="Description" class="form-label">Description</label>
-        <textarea id="Description" name="Description" class="form-control" maxlength="500"></textarea>
-        <div class="invalid-feedback">Description can't be longer than 500 characters.</div>
+        <textarea id="Description" name="Description" class="form-control" maxlength="500">@Model?.Description</textarea>
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.Description)</span>
     </div>
 
     <div class="col-12 mt-3">
         <button type="submit" class="btn btn-success">Save Travel</button>
     </div>
 </form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

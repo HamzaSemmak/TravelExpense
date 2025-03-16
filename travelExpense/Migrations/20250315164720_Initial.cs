@@ -7,7 +7,7 @@ using MySql.EntityFrameworkCore.Metadata;
 namespace travelExpense.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigration : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -99,7 +99,7 @@ namespace travelExpense.Migrations
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false),
                     Email = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false),
-                    Password = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: false),
+                    Password = table.Column<string>(type: "longtext", nullable: false),
                     RoleId = table.Column<int>(type: "int", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime(6)", nullable: false)
                 },

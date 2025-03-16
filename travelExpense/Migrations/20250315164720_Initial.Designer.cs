@@ -6,14 +6,13 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using travelExpense.Data;
 
-
 #nullable disable
 
 namespace travelExpense.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250311232814_Initial Migration")]
-    partial class InitialMigration
+    [Migration("20250315164720_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -220,8 +219,7 @@ namespace travelExpense.Migrations
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("varchar(20)");
+                        .HasColumnType("longtext");
 
                     b.Property<int>("RoleId")
                         .HasColumnType("int");

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using travelExpense.Utils;
 
 namespace travelExpense.Models
@@ -7,7 +8,11 @@ namespace travelExpense.Models
     {
         public int Id { get; set; }
 
+        [Required(ErrorMessage = "Category is required.")]
+
         public int CategoryId { get; set; }
+
+        [ForeignKey("CategoryId")]
         public Category Category { get; set; }
 
         public List<Client> Clients { get; set; }
@@ -43,6 +48,8 @@ namespace travelExpense.Models
         public Travel()
         {
             CreatedAt = DateTime.UtcNow;
+            Clients = new List<Client>();
+            Expenses = new List<Expense>();
         }
 
         public override string ToString()
