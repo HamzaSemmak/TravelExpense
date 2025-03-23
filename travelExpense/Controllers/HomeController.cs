@@ -15,7 +15,7 @@ namespace travelExpense.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "Travel");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

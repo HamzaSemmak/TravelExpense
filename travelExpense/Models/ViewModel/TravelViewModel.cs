@@ -12,8 +12,6 @@ namespace travelExpense.Models.ViewModel
         [Required(ErrorMessage = "Category is required.")]
         public int CategoryId { get; set; }
 
-        [Required(ErrorMessage = "Budget is required.")]
-        [Range(0.01, double.MaxValue, ErrorMessage = "Budget must be a positive number.")]
         public decimal Budget { get; set; }
 
         [Required(ErrorMessage = "Start date is required.")]
@@ -27,7 +25,10 @@ namespace travelExpense.Models.ViewModel
         [MaxLength(500, ErrorMessage = "Description can't be more than 500 characters.")]
         public string Description { get; set; }
 
-        public TravelViewModel() { }
+        public TravelViewModel() 
+        {
+            this.Budget = 0;
+        }
 
         public override string ToString()
         {

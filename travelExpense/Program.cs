@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using travelExpense.Data;
 using travelExpense.Middleware;
+using travelExpense.Utils;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +20,15 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
+builder.Services.AddHttpContextAccessor();
+
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var httpContextAccessor = scope.ServiceProvider.GetRequiredService<IHttpContextAccessor>();
+    UserUtils.Initialize(httpContextAccessor);
+}
 
 if (!app.Environment.IsDevelopment())
 {

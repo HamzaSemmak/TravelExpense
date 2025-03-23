@@ -1,0 +1,72 @@
+﻿@model travelExpense.Models.ViewModel.ClientViewModel
+
+@{
+    ViewData["Title"] = "Edit Client";
+}
+
+<div class="d-flex align-items-center justify-content-between">
+    <div>
+        <h3 class="mt-4">Edit Client</h3>
+        <p class="text-muted">Update the details of the client.</p>
+    </div>
+    <a href="/Client/Index" class="btn btn-primary">Back</a>
+</div>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}
+
+<form id="editClientForm" class="row" method="post">
+    <div class="col-4">
+        <label for="Name" class="form-label">Client Name</label>
+        <input type="text" id="Name" name="Name" class="form-control" required maxlength="200" value="@Model.Name" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.Name)</span>
+    </div>
+
+    <div class="col-4">
+        <label for="Email" class="form-label">Email</label>
+        <input type="email" id="Email" name="Email" class="form-control" required maxlength="200" value="@Model.Email" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.Email)</span>
+    </div>
+
+    <div class="col-4">
+        <label for="Phone" class="form-label">Phone</label>
+        <input type="tel" id="Phone" name="Phone" class="form-control" required maxlength="15" value="@Model.Phone" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.Phone)</span>
+    </div>
+
+    <div class="col-4">
+        <label for="TravelId" class="form-label">Associated Travel</label>
+        <select id="TravelId" name="TravelId" class="form-control">
+            <option value="">Select Travel</option>
+            @foreach (var travel in ViewBag.Travels as List<travelExpense.Models.Travel>)
+            {
+                <option value="@travel.Id" selected="@(Model?.TravelId == travel.Id ? "selected" : null)">
+                    @travel.TravelName
+                </option>
+            }
+        </select>
+    </div>
+
+    <div class="col-6">
+        <label for="Address" class="form-label">Address</label>
+        <textarea id="Address" name="Address" class="form-control" maxlength="500">@Model.Address</textarea>
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.Address)</span>
+    </div>
+
+    <div class="col-12 mt-3">
+        <button type="submit" class="btn btn-success">Save Changes</button>
+    </div>
+</form>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial");
+}

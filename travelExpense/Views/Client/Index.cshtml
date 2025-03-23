@@ -1,0 +1,82 @@
+﻿@using travelExpense.Utils
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Clients Overview";
+}
+
+@model List<travelExpense.Models.Client>
+
+<div class="container mt-4">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+        <div>
+            <h3 class="text-primary">Clients Overview</h3>
+            <p class="text-muted">Here you can find a list of all recorded clients, including destinations, dates, and expenses.</p>
+        </div>
+        <a href="/Client/Create" class="btn btn-primary">Add Client</a>
+    </div>
+
+    <div class="table-responsive">
+        <table id="travelTable" class="table table-hover table-bordered">
+            <thead class="table-white text-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Date Creation</th>
+                    <th>Phone</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.ToArray().Length > 0)
+                {
+                    @foreach (var client in Model)
+                    {
+                        <tr class="align-middle">
+                            <td>@client.Id</td>
+                            <td>@client.Name</td>
+                            <td>@client.Email</td>
+                            <td>@client.CreatedAt.ToString("yyyy-MM-dd")</td>
+                            <td>@client.Phone</td>
+                            <td>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <a href="@Url.Action("Details", "Client", new { id = client.Id })" class="btn btn-info btn-sm" data-bs-toggle="tooltip" title="View Details">
+                                        Show
+                                    </a>
+                                    <a href="@Url.Action("Edit", "Client", new { id = client.Id })" class="btn btn-warning btn-sm" data-bs-toggle="tooltip" title="Edit Travel">
+                                        Edit
+                                    </a>
+                                    @if (@UserUtils.isAdmin())
+                                    {
+                                        <form method="post" action="@Url.Action("DeleteConfirmed", "Client")" style="display:inline;">
+                                            <input type="hidden" name="id" value="@client.Id" />
+                                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this client?');" data-bs-toggle="tooltip" title="Delete lient">
+                                                Delete
+                                            </button>
+                                        </form>
+                                    }
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="5" class="text-center text-muted">No clients found.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    });
+</script>

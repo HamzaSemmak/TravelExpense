@@ -1,21 +1,47 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using Org.BouncyCastle.Crypto.Generators;
+using travelExpense.Data;
 using travelExpense.Models;
 
 namespace travelExpense.Utils
 {
     public class UserUtils
     {
-        public static string UserToJson(User user)
+        private static IHttpContextAccessor _httpContextAccessor;
+
+        public static void Initialize(IHttpContextAccessor httpContextAccessor)
         {
-            return JsonConvert.SerializeObject(user);
+            _httpContextAccessor = httpContextAccessor;
         }
 
-        public static User AuthUser(HttpContext httpContext)
+        public static string UserToJson(User user)
         {
+            var settings = new JsonSerializerSettings
+            {
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            };
+
+            return JsonConvert.SerializeObject(user, settings);
+        }
+
+        public static User User()
+        {
+            var httpContext = _httpContextAccessor?.HttpContext;
+            if (httpContext == null) return null;
+
             var userJson = httpContext.Session.GetString("User");
-            return string.IsNullOrEmpty(userJson) ? null : JsonConvert.DeserializeObject<User>(userJson);
+            User user = string.IsNullOrEmpty(userJson) ? null : JsonConvert.DeserializeObject<User>(userJson);
+            return user;
+        }
+
+        public static bool isAdmin()
+        {
+            User user = User();
+            if(user == null) return false;
+            string role = user.Role.RoleName.ToString();
+            if(role == "Admin") return true;
+            return false;
         }
 
         public static string HashPassword(string password)

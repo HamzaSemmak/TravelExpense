@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using travelExpense.Data;
 using travelExpense.Utils;
 
@@ -23,7 +24,7 @@ namespace travelExpense.Controllers
         [HttpPost]
         public IActionResult Login(string email, string password)
         {
-            var user = _context.Users.FirstOrDefault(u => u.Email == email);
+            var user = _context.Users.Include(t => t.Role).FirstOrDefault(u => u.Email == email);
 
             if (user == null)
             {
@@ -36,8 +37,9 @@ namespace travelExpense.Controllers
                 ViewBag.ErrorMessage = "Incorrect password.";
                 return View();
             }
-
+            Console.WriteLine($"THIS THE TEST {user.ToString()}");
             var userJson = UserUtils.UserToJson(user);
+            Console.WriteLine($"THIS THE TEST USER JSON {userJson.ToString()}");
             HttpContext.Session.SetString("User", userJson);
 
             Console.WriteLine($"User logged in: {user}");
